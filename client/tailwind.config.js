@@ -17,6 +17,13 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        aquire: ['Aquire', 'sans-serif'],
+        aquirelight: ['AquireLight', 'sans-serif'],
+        aquirebold: ['AquireBold', 'sans-serif'],
+        altedin: ['Altedin', 'sans-serif'],
+        altedinbold: ['AltedinBold', 'sans-serif']
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

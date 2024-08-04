@@ -4,7 +4,7 @@ const Auth = () => {
             <div className="flex flex-col gap-10 items-center justify-center">
                 <div className="flex items-center justify-center flex-col">
                     <div className="flex items-center justify-center h-full w-full">
-                        <h1 className="text-5xl font-bold md:text-6xl">
+                        <h1 className="text-5xl font-bold md:text-6xl font-aquire">
                             Welcome to Heriot Hive
                         </h1>
                     </div>
