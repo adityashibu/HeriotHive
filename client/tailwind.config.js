@@ -25,6 +25,8 @@ module.exports = {
         altedinbold: ['AltedinBold', 'sans-serif']
       },
       colors: {
+        customBlue: "#145777",
+        customBrown: "#8c6f51",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
