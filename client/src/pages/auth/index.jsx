@@ -30,7 +30,7 @@ const Auth = () => {
     }
 
     return <div className="h-[100vh] w-[100vw] flex items-center justify-center bg-customBlue">
-        <div className="h-[80vh] w-[80vw] md:w-[90vw] lg:w-[70vw] xl:w-[60vw] bg-white bg-opacity-70 border border-white border-opacity-30 shadow-3xl rounded-3xl backdrop-blur-md p-8 grid sm:grid-cols-1 xl:grid-cols-2">
+        <div className="sm:h-[80vh] sm:w-[80vw] md:w-[90vw] md:h-[90vh] lg:w-[70vw] xl:w-[60vw] bg-white bg-opacity-70 border border-white border-opacity-30 shadow-3xl rounded-3xl backdrop-blur-md p-8 grid sm:grid-cols-1 xl:grid-cols-2">
             <div className="flex flex-col gap-10 items-center justify-center">
                 <div className="flex items-center justify-center flex-col">
                     <div className="flex items-center justify-center h-full w-full">
@@ -90,12 +90,12 @@ const Auth = () => {
                     </Tabs>
                 </div>
             </div>
-            <div className="hidden xl:flex justify-center items-center">
+            <div className="hidden xl:flex justify-center items-center pointer-events-none">
                 {/* <img src={login} alt="background login" className="h-[700px]" /> */}
                 <Lottie
                     options={defaultOptions}
-                    width={380}
-                    height={380}
+                    width={400}
+                    height={400}
                     preserveAspectRatio="xMidYMid meet"
                 />
             </div>
