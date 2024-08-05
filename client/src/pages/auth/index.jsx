@@ -23,11 +23,11 @@ const Auth = () => {
             <div className="flex flex-col gap-10 items-center justify-center">
                 <div className="flex items-center justify-center flex-col">
                     <div className="flex items-center justify-center h-full w-full">
-                        <h1 className="text-5xl md:text-6xl font-aquire text-customBlue">
-                            Welcome to Heriot Hive
+                        <h1 className="text-4xl md:text-6xl font-aquire text-customBlue">
+                            Heriot Hive
                         </h1>
                     </div>
-                    <p className="font-medium text-center text-customBrown">Fill in the details to get started with the best chat app in Heriot</p>
+                    <p className="font-medium text-center text-customBrown text-[12px] md:text-xl">Fill in the details to get started with the best chat app in Heriot</p>
                 </div>
                 <div className="flex items-center justify-center w-full">
                     <Tabs className="w-3/4">
@@ -74,7 +74,7 @@ const Auth = () => {
                                 value={confirmPassword}
                                 onChange={e => setConfirmPassword(e.target.value)}
                             />
-                            <Button className="rounded-full p-6" onClick={handleLogin}>Sign Up</Button>
+                            <Button className="rounded-full p-6" onClick={handleSignup}>Sign Up</Button>
                         </TabsContent>
                     </Tabs>
                 </div>
