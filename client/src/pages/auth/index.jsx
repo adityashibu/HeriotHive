@@ -2,9 +2,12 @@ import { login, lottieAuth, animatedH } from "@/assets";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import apiClient from "@/lib/api-client";
+import { SIGNUP_ROUTE } from "@/utils/constants";
 import { useState } from "react";
 
 import Lottie from "react-lottie";
+import { toast } from "sonner";
 
 
 const Auth = () => {
@@ -20,16 +23,35 @@ const Auth = () => {
     const [password, setPassword] = useState("")
     const [confirmPassword, setConfirmPassword] = useState("")
 
+    const validateSignup = () => {
+        if (!email.length) {
+            toast.error("Email is required");
+            return false;
+        }
+        if (!password.length) {
+            toast.error("Password is required");
+            return false;
+        }
+        if (password !== confirmPassword) {
+            toast.error("Passwords do not match");
+            return false;
+        }
+        return true;
+    };
+
     const handleLogin = async () => {
 
     }
 
     const handleSignup = async () => {
-
+        if (validateSignup()) {
+            const response = await apiClient.post(SIGNUP_ROUTE, { email, password });
+            console.log(response);
+        }
     }
 
     return <div className="h-[100vh] w-[100vw] flex items-center justify-center bg-white">
-        <div className="sm:h-[80vh] sm:w-[80vw] md:w-[90vw] md:h-[90vh] lg:w-[70vw] xl:w-[60vw] bg-customBlue border border-customBlue border-opacity-30 shadow-3xl rounded-3xl backdrop-blur-md p-8 grid sm:grid-cols-1 xl:grid-cols-2 bg-opacity-30">
+        <div className="sm:h-[80vh] sm:w-[80vw] md:w-[90vw] md:h-[90vh] lg:w-[70vw] xl:w-[60vw] bg-customBlue border border-customBlue border-opacity-90 shadow-5xl rounded-3xl p-8 grid sm:grid-cols-1 xl:grid-cols-2 bg-opacity-30">
             <div className="flex flex-col gap-10 items-center justify-center">
                 <div className="flex items-center justify-center flex-col">
                     <div className="flex items-center justify-center h-full w-full">
