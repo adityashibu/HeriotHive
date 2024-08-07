@@ -9,7 +9,6 @@ import Lottie from "react-lottie";
 
 const Auth = () => {
     const defaultOptions = {
-        loop: true,
         autoplay: true,
         animationData: animatedH,
         rendererSettings: {
@@ -29,8 +28,8 @@ const Auth = () => {
 
     }
 
-    return <div className="h-[100vh] w-[100vw] flex items-center justify-center bg-customBlue">
-        <div className="sm:h-[80vh] sm:w-[80vw] md:w-[90vw] md:h-[90vh] lg:w-[70vw] xl:w-[60vw] bg-white bg-opacity-70 border border-white border-opacity-30 shadow-3xl rounded-3xl backdrop-blur-md p-8 grid sm:grid-cols-1 xl:grid-cols-2">
+    return <div className="h-[100vh] w-[100vw] flex items-center justify-center bg-white">
+        <div className="sm:h-[80vh] sm:w-[80vw] md:w-[90vw] md:h-[90vh] lg:w-[70vw] xl:w-[60vw] bg-customBlue border border-customBlue border-opacity-30 shadow-3xl rounded-3xl backdrop-blur-md p-8 grid sm:grid-cols-1 xl:grid-cols-2 bg-opacity-30">
             <div className="flex flex-col gap-10 items-center justify-center">
                 <div className="flex items-center justify-center flex-col">
                     <div className="flex items-center justify-center h-full w-full">
@@ -38,13 +37,13 @@ const Auth = () => {
                             Heriot Hive
                         </h1>
                     </div>
-                    <p className="font-medium text-center text-customBrown text-[12px] md:text-lg">Fill in the details to get started with the best chat app in Heriot</p>
+                    <p className="font-medium text-center text-black text-[12px] md:text-lg">Fill in the details to get started with the best chat app in Heriot</p>
                 </div>
                 <div className="flex items-center justify-center w-full">
                     <Tabs className="w-3/4">
                         <TabsList className="bg-transparent rounded-none w-full">
-                            <TabsTrigger value="login" className="data-[state=active]:bg-transparent text-customBrown text-opacity-90 border-b-2 rounded-none w-full data-[state=active]:text-customBlue data-[state=active]:border-b-customBrown p-3 transition-all duration-300">Log In</TabsTrigger>
-                            <TabsTrigger value="signup" className="data-[state=active]:bg-transparent text-customBrown text-opacity-90 border-b-2 rounded-none w-full data-[state=active]:text-customBlue data-[state=active]:border-b-customBrown p-3 transition-all duration-300">Sign Up</TabsTrigger>
+                            <TabsTrigger value="login" className="data-[state=active]:bg-transparent text-black text-opacity-90 border-b-2 rounded-none w-full data-[state=active]:text-customBlue data-[state=active]:border-b-customBlue p-3 transition-all duration-300">Log In</TabsTrigger>
+                            <TabsTrigger value="signup" className="data-[state=active]:bg-transparent text-black text-opacity-90 border-b-2 rounded-none w-full data-[state=active]:text-customBlue data-[state=active]:border-b-customBlue p-3 transition-all duration-300">Sign Up</TabsTrigger>
                         </TabsList>
                         <TabsContent className="flex flex-col gap-5 mt-10" value="login">
                             <Input
