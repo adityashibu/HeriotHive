@@ -1,6 +1,7 @@
 import User from "../models/user.model.js";
 import bcrypt from "bcryptjs";
 import generateTokenandSetCookie from "../utils/generateToken.js";
+import toast from "react-hot-toast";
 
 export const signup = async (req, res) => {
     try {
