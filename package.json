@@ -4,7 +4,9 @@
   "description": "Creating a chat app using MERN Stack and Sockets.io for the Heriot Hive project",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon backend/server.js"
+    "server": "nodemon backend/server.js",
+    "start": "node backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "type": "module",
   "keywords": [],
