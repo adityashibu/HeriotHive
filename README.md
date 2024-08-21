@@ -1,6 +1,9 @@
 # HeriotHive
 Creating a chat app using MERN Stack and Sockets.io for the Heriot Hive project
 
+## Visit it on onRender
+[![onrender](https://img.shields.io/badge/hosted%20on-Render-blue?logo=render)](https://heriothive.onrender.com)
+
 ## Tech Stack:
 
 - **M** - MongoDB <br>![MongoDB Icon](https://img.icons8.com/color/48/000000/mongodb.png)
