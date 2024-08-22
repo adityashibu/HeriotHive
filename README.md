@@ -59,6 +59,13 @@ Creating a modern, real-time chat application using the **MERN** stack and **Soc
     npm start
     ```
 
+## 📈 Additional Functionalities waiting to be implemented
+| Functionality | Description | Priority |
+|------|-------------|------|
+| Group Chats | Create a conversation with multiple people, a Group Chat | ❗❗❗|
+| Document Sharing | Share files such as images, documents etc from the application | ❗❗
+| Video Calling  | The ability to create a video call right from the application | ❗
+
 ## 🤝 Contributing
 - We welcome contributions! Feel free to open issues or submit pull requests.
 
